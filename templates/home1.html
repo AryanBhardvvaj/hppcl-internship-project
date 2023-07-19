@@ -1,0 +1,101 @@
+{% comment %} <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPPCL</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+   <!--<link rel="stylesheet" href="D:\HPPCL data\static\css\styles.css">--> 
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+
+<body>
+    
+
+    
+    <div class="navbar">
+        <div class="navbar-brand">
+          <img class="navbar-logo" src="{{ url_for('static', filename='hppcl_logo.png') }}" alt="HPPCL Logo">
+
+          HPPCL
+        </div>
+        <div class="navbar-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <h3>Predictor </h3>
+                        <!--First card -->
+<div class='cards'>
+
+    
+    <div class="container" id="card1">
+        <div class="wrapper">
+          <div class="banner-image1"> </div>
+          <h1> Kashang </h1>
+          <p>Lorem ipsum dolor sit amet, <br/>
+            consectetur adipiscing elit.</p>
+        </div>
+        <div class="button-wrapper"> 
+            <button class="btn outline">DETAILS</button>
+            <button class="btn fill predict_btn">Predict</button>
+
+        </div>
+    </div>
+    
+    <!--Second card -->
+    
+    <div class='container ml-4' id="card2">
+        <div class="wrapper">
+            <div class="banner-image2"> </div>
+            <h1> Sawara Kuddu </h1>
+            <p>Lorem ipsum dolor sit amet, <br/>
+                consectetur adipiscing elit.</p>
+            </div>
+            <div class="button-wrapper"> 
+                <button class="btn outline">DETAILS</button>
+                <button class="btn fill predict_btn">Predict</button>                
+            </div>
+    </div>
+        
+        <!--Third card -->
+        
+        <div class='container ml-4' id="card3">
+            <div class="wrapper">
+                <div class="banner-image3"> </div>
+                <h1> Sainj </h1>
+                <p>Lorem ipsum dolor sit amet, <br/>
+                    consectetur adipiscing elit.</p>
+                </div>
+                <div class="button-wrapper"> 
+                    <button class="btn outline">DETAILS</button>
+                    <button class="btn fill predict_btn">Predict</button>
+                </div>
+            </div>
+        
+</div>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        <script src="{{ url_for('static', filename='css/script.js') }}"></script>
+
+</body>
+
+</html> -->

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sainj</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    
+    
+    
+</head>
+<body>
+
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+    <div class="navbar">
+        <div class="navbar-brand">
+            HPPCL
+        </div>
+        <div class="navbar-logo"></div>
+        <div class="navbar-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <br>
+    <br>
+<div class="everything">
+    
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                
+                <div class="sainjimg1"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="sainjimg2"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="sainjimg3"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="sainjimg4"></div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="containermain">
+        <form action="/predict" method="post">
+            <input type="hidden" name="file" value="sainj">\
+        </form>      
+        <h3 class="date">Prediction - </h3>      
+
+        <div class="form">
+
+        <table class="prediction">
+            <tr  id="head">
+                <td>Total Cumulative Gross Generation (Units)</td>
+                <td>Sales (Rs.)</td>
+                <td>Date</td>
+            </tr>
+            <tr>
+                <td class="result"> {{ prediction_text }} </td>
+                <td class="result"> {{ revenue }} </td>
+                <td class="result"> {{ date }} </td>
+
+            </tr>
+        </table>
+    </div>
+
+
+    </div>
+
+</div>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    crossorigin="anonymous"></script>
+    
+</body>
+</html>

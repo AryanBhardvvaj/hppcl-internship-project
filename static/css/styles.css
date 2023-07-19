@@ -1,0 +1,460 @@
+
+body {
+  background: #41ffef;
+  background: linear-gradient(to right, #a0cce8, #dab4e8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+.pagehead{
+  display: flex;
+  justify-content: center;
+}
+
+#Date_Input{
+  margin-left: 50px;
+  max-width: auto;
+}
+/* --------------------------------------  Nav Bar --------------------- */
+.navbar {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.541);
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.navbar-brand {
+
+    float: left;
+    padding: 5px 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color:rgb(43, 72, 216);
+}
+
+.navbar-logo {
+  
+    background-image: url('hppcl_logo.png');
+    background-position: center;
+    background-size: cover;
+    height: 80px;
+    width: 100px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255, 0.255);
+    vertical-align: left;
+}
+
+.navbar-links {
+    float: right;
+}
+
+.navbar-links a {
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(239, 88, 88);
+    transform:translateY(-5px);
+    transition: 0.5s;
+}
+/* ------------------------------------   Cards ------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.container {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.555);  
+    padding: 38px;  
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    
+  }
+
+  .date{
+    justify-content: left;
+    margin: 30px;
+  }
+  
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .banner-image1 {
+    background-image: url('kashang.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255, 0.255)
+  }
+  .banner-image2 {
+    background-image: url('sawrakudduproject.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255, 0.255)
+  }
+  .banner-image3 {
+    background-image: url('sainj.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255, 0.255)
+  }
+  
+  h1{
+    font-family: 'Righteous', sans-serif;
+    color: rgba(255,255,255,0.98);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+  }
+  
+  p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .button-wrapper{
+    margin-top: 18px;
+  }
+  
+  .btn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-size: 0.8rem;  
+    letter-spacing: 2px;  
+    cursor: pointer;
+  }
+  
+  .btn + .btn {
+    margin-left: 10px;
+  }
+  
+  .outline {
+    background: transparent;
+    color: rgba(0, 212, 255, 0.9);
+    border: 1px solid rgba(0, 212, 255, 0.6);
+    transition: all .3s ease;
+    
+  }
+  
+  .outline:hover{
+    transform: scale(1.125);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+    transition: all .3s ease;  
+  }
+  
+  .fill {
+    background: rgba(0, 212, 255, 0.9);
+    color: rgba(255,255,255,0.95);
+    filter: drop-shadow(0);
+    font-weight: bold;
+    transition: all .3s ease; 
+  }
+  
+  .fill:hover{
+    transform: scale(1.125);  
+    border-color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+    transition: all .3s ease;    
+  }
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 5px 5px 5px;
+}
+
+
+/* ------------------------------------ about ------------------------------ */
+.abouthead{
+  color: #000000;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+    text-align: left;
+    text-shadow: #ddd;
+    text-decoration: underline;
+    
+  }
+  .aboutpic{
+    display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.abouttext{
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  text-align: left;
+  
+}
+/* ------------------------------------ Contact ------------------------------ */
+.contactheading{
+  color: #000000;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+    text-align: left;
+    text-shadow: #ddd;
+    text-decoration: underline;
+    
+}
+.aboutproject{
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  text-align: left;
+}
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+.contacttable{
+  /* display: flex; */
+  /* justify-content: left; */
+  margin: 50px;
+}
+
+/* ------------------------------------ kashang.html ------------------------------ */
+
+.carousel {
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+}
+.carousel-indicators{
+  border-radius: 50px;
+}
+
+.kashangimg1 {
+  background-image: url('kashang1.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+.kashangimg2 {
+  background-image: url('kashang2.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+.kashangimg3 {
+  background-image: url('kashang3.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+.kashangimg4 {
+  background-image: url('kashang4.JPG');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+/* ---------------------------------  sainj --------------------------- */
+.sainjimg1{
+  background-image: url('sainj1.png');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+.sainjimg2{
+  background-image: url('sainj2.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+.sainjimg3{
+  background-image: url('sainj3.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+.sainjimg4{
+  background-image: url('sainj4.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+
+/* ---------------------------------  sk --------------------------- */
+
+.skimg1{
+  background-image: url('sk1.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+.skimg2{
+  background-image: url('sk2.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+.skimg3{
+  background-image: url('sk3.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+.skimg4{
+  background-image: url('sk4.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+
+/* ------------------------------table----------------------------- */
+
+.form{
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(89, 139, 144, 0.575);
+}
+
+.form{
+display: flex;
+padding: 10px;
+box-sizing: border-box;
+background-color: rgba(211, 211, 211, 0.532);
+box-shadow: inset 0 0 10px #ffffff89;
+animation: shadow-animation 2s infinite;
+max-width: auto;
+margin: 0 auto;
+background-color: #f5f5f582;
+border-radius: 8px;
+}
+
+/* table {
+  box-shadow: inset 0 0 10px #ffffff;
+  animation: shadow-animation 2s infinite;
+  max-width: auto;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+} */
+
+@keyframes shadow-animation {
+  0% {
+    box-shadow: 0 0 5px #000;
+  }
+  50% {
+    box-shadow: 0 0 5px #0091ff;
+  }
+  100% {
+    box-shadow: 0 0 5px #ff00e1;
+  }
+}
+
+thead{
+  background: #4ec2d759;
+
+  
+}
+#head{
+  font-weight: bold;
+  text-decoration: white;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(181, 180, 180, 0.427);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(239, 239, 239, 0.603);
+}
+.prediction{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}

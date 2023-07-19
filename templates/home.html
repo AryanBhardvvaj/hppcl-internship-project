@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPPCL</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">
+            HPPCL
+        </div>
+        <div class="navbar-logo"></div>
+        <div class="navbar-links">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="Home">
+
+    <h3 class="pagehead">Sales and Production Prediction System</h3>
+
+    <!-- First card -->
+<form action="/predict" method="post" >
+<div class="date">
+                    <h5 class="Date-title" id="Date_Input">Enter Date</h5>
+                    <input type="date" class="input" name="DATE" id="Date_Input" required="required">
+<div>
+
+
+
+    <div class="cards">
+        <div  class="container" id="card1">
+            <div class="wrapper">
+                <div class="banner-image1"></div>
+                <h1>Kashang</h1>
+                <p>Integrated Kashang HEP (IKHEP) envisages development of Kashang and Kerang Streams<br>, tributaries of the river Sutlej comprising four distinct stages </p>
+            </div>
+            <div class="button-wrapper" name='file'>
+                <button class="btn outline" onClick="kashang()">DETAILS</button>
+                
+                <button class="btn fill predict_btn" name="file" value="kashang">Predict</button>
+
+                
+            </div>
+        </div>
+
+        <!-- Second card -->
+        <div class="container ml-4" id="card2">
+            <div class="wrapper">
+                <div class="banner-image2"></div>
+                <h1>Sawara Kudu</h1>
+                <p>Sawra Kuddu HEP has been contemplated as a power generation development<br> on the Pabbar River in Shimla District (HP).</p>
+            </div>
+            <div class="button-wrapper">
+                <button class="btn outline" onClick="sk()">DETAILS</button>
+                <button class="btn fill predict_btn" name="file" value="sk">Predict</button>
+
+            </div>
+        </div>
+
+        <!-- Third card -->
+        <div class="container ml-4" id="card3">
+            <div class="wrapper">
+                <div class="banner-image3"></div>
+                <h1>Sainj</h1>
+                <p>Sainj HEP has been contemplated as a run of the river development <br>on river Sainj – a tributary of River Beas in Kullu Dist. of HP.</p>
+            </div>
+            <div class="button-wrapper">
+                <button class="btn outline" onClick="sainj()" >DETAILS</button>
+                <button class="btn fill predict_btn" name="file" value="sainj">Predict</button>
+
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div id="About">
+<br>
+<br>
+<br>
+
+    <h3 class="abouthead">HPPCL</h3>
+    <div class="navbar-logo aboutpic"></div>
+    <p class="abouttext">
+        Himachal Pradesh Power Corporation Limited (HPPCL) was incorporated in December, 2006 under the Companies Act 1956, with the objective to plan, promote and organize the development of power generation on behalf of Government of Himachal Pradesh (GoHP). Target of HPPCL is to develop 281 MW Power generating capacity by March, 2021 and 861 MW by the year 2024.
+
+Presently there are 22 Hydro Electric Projects allotted by the GoHP for development under state sector to HPPCL with aggregate installed capacity of 2817 MW. HPPCL has also been a nodal agency for development of Kishau Multipurpose Project (660 MW) to be executed through a Special Purpose Vehicle of Govt. of Himachal Pradesh and Govt. of Uttarakhand. Himachal Pradesh has 50% share in the project thereby making the total alloted potential of 3147 MW.
+
+HPPCL has set up a Solar Power Prooject of 5 MW at Berra Dol, near Shri Naina Devi Ji Shrine in District Bilaspur and same has been successfully synchronized with grid on 07.12.2018. The Berra Dol Solar Power Project (5 MW) was commissioned on 4th January, 2019 and was inaugurated on 20.02.2019 by Hon'ble Chief Minister, Himachal Pradesh. 
+    </p>
+    
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="Contact">
+<br>
+<br>
+<br>
+    <div class="contactheading">About This Project</div>
+
+    <div class="aboutproject"> 
+        In this Project, I consider ML( MACHINE LEARNING) for predicting sales and production of electricity for various projects handled by HPPCL .Pridiction systems using machine learning have become increasingly popular in recent years. These systems utilize algorithms to analyze a user's viewing history and preferences to provide an estimate of how much profit will the organization makein coming years. 
+
+The primary goal of these systems is to provide a more engaging and satisfying viewing experience for users. By analyzing the data of production in the past years that depends on various factors we take into account many factors and try to come upwith an estimate for the future.
+<br>Aryan Bhardwaj (Project Developer)
+    </div>
+<br>
+    <div class="contacttable">
+        <h2>Contact - </h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Phone Number</th>
+      <th>Email</th>
+      <th>Role</th>
+    </tr>
+    <tr>
+      <td>Aryan Bhardwaj</td>
+      <td>7807916901</td>
+      <td>aryanbharduuaj@gmail.com</td>
+      <td>Project Developer</td>
+      
+    </tr>
+    <tr>
+      <td>Hemant Bhardwaj</td>
+      <td>9418459593</td>
+      <td>hemant.uiitian@gmail.com</td>
+      <td>Project Guide</td>
+    </tr>
+  </table>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHjI1J4M3WSczjMowPt3Cowg4dbbksxPPo28ElBj3griZ/N7gJc5b9d6W6ib"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-pzjw8+otxuKnK1+9+9FjhK9j4g6pje8ar2U1u5FOW/sWYnTzZR6AK4Uar5hJuJC3"
+        crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        function sk(){
+            window.location.href ="http://www.hppcl.in/content/600_5_SawraKudduHEP.aspx" ;
+        }
+        function kashang(){
+            window.location.href = "http://www.hppcl.in/content/602_5_KashangHEP.aspx";
+        }
+        function sainj(){
+            window.location.href = "http://www.hppcl.in/content/599_5_SainjHEP.aspx";
+        }
+    </script>
+</body>
+
+</html>
